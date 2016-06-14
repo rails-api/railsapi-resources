@@ -153,6 +153,7 @@ module RailsAPI
         subclass.attribute :id, format: :id
 
         check_reserved_resource_name(subclass._type, subclass.name)
+        super
       end
 
       def resource_for(type)
